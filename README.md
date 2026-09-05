@@ -1,75 +1,60 @@
-# Bili-Bili
+# Bili-Bili: AI-Powered Bilibili Creator Toolkit 🚀
+
 AI-powered Bilibili Creator Toolkit for planning, organizing, and optimizing video content, titles, descriptions, captions, thumbnails, and publishing workflows.
-🎬 Bilibili Creator AI Toolkit
 
-«Create smarter. Publish better. Grow consistently. 🤖🚀»
+🎬 **Bilibili Creator AI Toolkit**
 
-An AI-powered toolkit designed to help creators plan, prepare, and manage content for Bilibili.
+«Create smarter. Publish better. Grow consistently. 🤖✨»
 
-The project focuses on turning a content idea into a structured publishing workflow — from topic research and scripts to titles, descriptions, captions, thumbnails, and content analytics.
+An AI-powered toolkit designed to help creators plan, prepare, and manage content for Bilibili. This project focuses on transforming a content idea into a structured publishing workflow, encompassing topic research, script generation, title and description optimization, caption creation, thumbnail prompting, and future content analytics.
 
-✨ Features
+---
 
-- 🤖 AI Content Assistant — Generate and refine content ideas.
-- 📝 Script Generator — Create structured video scripts.
-- 🇨🇳 Chinese Content Support — Prepare Chinese titles, descriptions, captions, and hashtags.
-- 🎯 Title Generator — Create clear and engaging Bilibili titles.
-- 📄 Description Generator — Generate organized video descriptions.
-- #️⃣ Hashtag Suggestions — Generate relevant discovery tags.
-- 🖼️ Thumbnail Prompts — Create prompts for thumbnail and cover artwork.
-- 🎬 Video Workflow — Organize ideas, scripts, assets, and publishing tasks.
-- 📊 Analytics Ready — Designed for future performance tracking and content insights.
-- 🔄 Automation Ready — Architecture can be extended with APIs and scheduled workflows.
+## ✨ Features
 
-🧠 Workflow
+- 🤖 **AI Content Assistant**: Generate and refine creative content ideas.
+- 📝 **Script Generator**: Create well-structured and engaging video scripts.
+- 🇨🇳 **Chinese Content Support**: Prepare localized Chinese titles, descriptions, and relevant hashtags.
+- 🎯 **Title Generator**: Craft clear, concise, and click-worthy Bilibili titles.
+- 📄 **Description Generator**: Generate organized and informative video descriptions.
+- #️⃣ **Hashtag Suggestions**: Discover and apply relevant discovery tags for increased reach.
+- 🖼️ **Thumbnail Prompts**: Generate effective prompts for creating compelling thumbnail and cover artwork.
+- 🎬 **Video Workflow Management**: Organize ideas, scripts, assets, and publishing tasks efficiently.
+- 📊 **Analytics Ready**: Designed with future performance tracking and content insights in mind.
+- 🔄 **Automation Ready**: The architecture is built to be extended with APIs and scheduled workflows for seamless integration.
 
-Content Idea
-     ↓
-AI Topic Planning
-     ↓
-Script Generation
-     ↓
-Chinese Localization
-     ↓
-Title + Description + Tags
-     ↓
-Thumbnail / Visual Prompt
-     ↓
-Video Production
-     ↓
-Bilibili Publishing
-     ↓
-Analytics
-     ↓
-AI Optimization
+---
 
-🛠️ Planned Technology
+## 🧠 Workflow
 
-Frontend
-├── Next.js
-├── React
-├── TypeScript
-└── Tailwind CSS
+```mermaid
+graph TD
+    A[Content Idea] --> B(AI Topic Planning);
+    B --> C(Script Generation);
+    C --> D(Chinese Localization);
+    D --> E(Title + Description + Tags);
+    E --> F(Thumbnail / Visual Prompt);
+    F --> G(Video Production);
+    G --> H(Bilibili Publishing);
+    H --> I(Analytics);
+    I --> J(AI Optimization);
+```
 
-Backend
-├── Node.js
-├── API Services
-└── Server-side AI integrations
+---
 
-AI
-├── OpenAI
-├── Anthropic
-└── Google Gemini
+## 🛠️ Tech Stack
 
-Data
-├── Firebase / Firestore
-└── Analytics
+- **Frontend**: Next.js, React, TypeScript, Tailwind CSS
+- **Backend**: Node.js, API Services, Server-side AI integrations
+- **AI**: OpenAI, Anthropic, Google Gemini (Planned)
+- **Data**: Firebase / Firestore (Planned)
+- **Deployment**: Vercel (Planned)
 
-Deployment
-└── Vercel
+---
 
-📁 Project Structure
+## 📁 Project Structure
 
+```plaintext
 bilibili-creator-ai/
 ├── app/
 ├── components/
@@ -82,120 +67,148 @@ bilibili-creator-ai/
 ├── .env.example
 ├── package.json
 └── README.md
+```
 
-🚀 Getting Started
+---
 
-Requirements
+## 🚀 Getting Started
 
-- Node.js 20+
-- npm
-- An AI provider API key
-- Firebase project if Firebase features are enabled
+### Requirements
 
-Installation
+- Node.js 20+ 🌳
+- npm (Node Package Manager)
+- An AI provider API key (e.g., OpenAI)
+- Firebase project (if Firebase features are enabled and configured)
 
-git clone <your-repository-url>
-cd bilibili-creator-ai
-npm install
+### Installation
 
-Create your local environment file:
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/rananisarsb51214/Bili-Bili.git
+    cd Bili-Bili
+    ```
 
-cp .env.example .env.local
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-Add the required configuration to ".env.local".
+3.  **Set up environment variables:**
+    Create your local environment file by copying the example:
+    ```bash
+    cp .env.example .env.local
+    ```
+    Then, add your required configuration (like AI provider API keys) to the `.env.local` file.
 
-Development
+### Development
 
+To start the development server, run:
+
+```bash
 npm run dev
+```
 
-Open the local development server and begin creating your content workflow.
+Open your browser to `http://localhost:3000` (or the port specified in your environment) to begin using the toolkit.
 
-🔐 Security
+---
 
-Never commit private credentials.
+## 🔐 Security Best Practices
 
-.env
-.env.local
-.env.production
-service-account.json
-AI API keys
-Firebase Admin credentials
+**Never commit private credentials to your repository.** This includes:
 
-Public browser configuration should only use variables explicitly designed to be public.
+- `.env` files
+- `.env.local`, `.env.production`
+- `service-account.json`
+- AI API keys
+- Firebase Admin credentials
 
-AI provider credentials and server-side Firebase credentials must remain on the server.
+Public browser configuration should only include variables explicitly designed for client-side use. AI provider credentials and server-side Firebase credentials must remain securely on the server.
 
-📌 Roadmap
+---
 
-Phase 1 — Foundation
+## 📌 Roadmap
 
-- [ ] Next.js application
-- [ ] TypeScript
-- [ ] Tailwind CSS
+### Phase 1 — Foundation
+
+- [x] Next.js application setup
+- [x] TypeScript integration
+- [x] Tailwind CSS styling
 - [ ] Creator dashboard
-- [ ] Environment configuration
+- [ ] Environment configuration handling
 
-Phase 2 — AI Content
+### Phase 2 — AI Content Generation
 
 - [ ] AI topic generator
 - [ ] Script generator
-- [ ] Chinese localization
+- [ ] Chinese localization tools
 - [ ] Title generator
 - [ ] Description generator
 - [ ] Hashtag generator
 
-Phase 3 — Creator Studio
+### Phase 3 — Creator Studio
 
-- [ ] Content library
-- [ ] Video project management
+- [ ] Content library management
+- [ ] Video project management tools
 - [ ] Thumbnail prompt generator
-- [ ] Caption management
-- [ ] Publishing checklist
+- [ ] Caption management interface
+- [ ] Publishing checklist features
 
-Phase 4 — Analytics
+### Phase 4 — Analytics Integration
 
 - [ ] Content performance dashboard
 - [ ] Engagement tracking
-- [ ] Trend analysis
-- [ ] AI-powered recommendations
+- [ ] Trend analysis tools
+- [ ] AI-powered content recommendations
 
-Phase 5 — Automation
+### Phase 5 — Automation & Optimization
 
-- [ ] Scheduled workflows
-- [ ] Publishing integrations
+- [ ] Scheduled workflow execution
+- [ ] Publishing integrations (potential)
 - [ ] Content pipeline automation
-- [ ] Performance-based optimization
-
-⚖️ Platform & API Compliance
-
-This project is an independent creator tool and is not affiliated with or endorsed by Bilibili.
-
-Any future API or publishing integration should use officially supported Bilibili developer capabilities and comply with applicable platform policies and usage requirements. Bilibili provides official Open Platform documentation covering authorization, video management, data access, and related developer services.
-
-🎯 Vision
-
-One Creator → One AI Studio → Complete Content Workflow
-
-The goal is to help creators spend less time on repetitive preparation and more time creating useful, original content.
+- [ ] Performance-based optimization suggestions
 
 ---
 
-📄 License
+## ⚖️ Platform & API Compliance
 
-Choose and add an appropriate open-source license before publishing the project.
+This project is an independent creator tool and is **not affiliated with, sponsored by, or endorsed by Bilibili.**
 
-⭐ Contributing
+Any future API or publishing integration must utilize officially supported Bilibili developer capabilities and strictly comply with all applicable platform policies and usage requirements. Refer to the official Bilibili Open Platform documentation for guidance on authorization, video management, data access, and other developer services.
 
-Contributions, ideas, improvements, and bug reports are welcome.
+---
 
-Please keep contributions focused on:
+## 🎯 Vision
 
-- Creator productivity
-- Original content workflows
-- AI-assisted production
-- Platform-compliant integrations
-- Security and reliability
+**One Creator → One AI Studio → Complete Content Workflow**
+
+The ultimate goal is to empower creators by minimizing the time spent on repetitive preparation tasks, allowing them to focus more on producing high-quality, original, and engaging content.
+
+---
+
+## ⭐ Contributing
+
+Contributions, ideas, improvements, and bug reports are highly welcome! Please keep contributions focused on:
+
+- Enhancing creator productivity 📈
+- Streamlining original content workflows ✍️
+- Leveraging AI for content production 🤖
+- Developing platform-compliant integrations 🔗
+- Ensuring security and reliability 🛡️
+
+Feel free to open an issue or submit a pull request.
+
+---
+
+## 📄 License
+
+This project is currently without a specified license. Please choose and add an appropriate open-source license before publishing or distributing the project widely.
 
 ---
 
 Built for creators. Powered by AI. 🚀
+
+[Back to Top](#table-of-contents)
+
+
+---
+**<p align="center">Generated by [ReadmeCodeGen](https://www.readmecodegen.com/)</p>**
